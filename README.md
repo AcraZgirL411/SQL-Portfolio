@@ -1,5 +1,5 @@
 # SQL-Portfolio
-This is where I'll keep track of the lessons I learn!
+Hi! Welcome to my portfolio; this is where I'll keep track of the lessons I learn! I'm really enjoying this line of work and can't wait to keep learning.
 # CASE
 The CASE statement goes through one or more conditions and returns a value as soon as a coniditon is met. <br/>
 SELECT <br/>
