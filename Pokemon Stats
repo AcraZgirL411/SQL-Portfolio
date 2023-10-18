@@ -1,0 +1,37 @@
+CREATE TABLE pokemon
+(name TEXT PRIMARY KEY,
+attack INTEGER,
+defense INTEGER,
+hp INTEGER,
+type TEXT);
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("charmander", 52, 43, 39, "fire");
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("squirtle", 48, 65, 44, "water");
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("bulbasaur", 49, 49, 45, "grass/posion");
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("ponyta", 85, 55, 50, "fire");
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("geodude", 80, 100, 40, "rock/ground");
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("gastly", 35, 30, 30, "ghost/poison");
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("butterfree", 45, 50, 60, "bug/flying");
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("pikachu", 55, 40, 35, "electric");
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("vulpix", 41, 40, 38, "fire");
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("mankey", 80, 35, 40, "fighting");
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("jiggly puff", 45, 20, 115, "fairy/normal");
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("psyduck", 52, 48, 50, "water");
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("growlithe", 75, 45, 60, "fire/rock");
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("machop", 80, 50, 70, "fire");
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("slowpoke", 65, 65, 90, "psychic");
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("seel", 45, 55, 65, "water");
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("magnemite", 35, 70, 25, "electric/steel");
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("chansey", 5, 5, 250, "fairy");
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("horsea", 40, 70, 30, "water");
+INSERT INTO pokemon(name, attack, defense, hp, type) VALUES ("evee", 55, 50, 55, "normal");
+SELECT name, AVG(attack) AS avg_attack FROM pokemon
+GROUP BY name HAVING avg_attack > 50;
+SELECT COUNT(*) FROM pokemon WHERE defense > 50 AND attack < 70;
+SELECT name, hp, attack, type, 
+    CASE
+        WHEN hp < 30 THEN "Bad"
+        WHEN hp < 50 THEN "Fine"
+        WHEN hp < 80 THEN "Good"
+        ELSE "Excellent"
+    END as "starter pokemon"
+FROM pokemon;
