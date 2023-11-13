@@ -1,0 +1,21 @@
+CREATE TABLE Monster_Hunter_Monster_Parts (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, quantity INTEGER);
+
+INSERT INTO Monster_Hunter_Monster_Parts (name, quantity) VALUES ("Monster Bone S", 150);
+INSERT INTO Monster_Hunter_Monster_Parts (name, quantity) VALUES ("Monster Bone L", 98);
+INSERT INTO Monster_Hunter_Monster_Parts (name, quantity) VALUES ("Monster Bone +", 76);
+INSERT INTO Monster_Hunter_Monster_Parts (name, quantity) VALUES ("Iron Ore", 103);
+INSERT INTO Monster_Hunter_Monster_Parts (name, quantity) VALUES ("Machalite Ore", 63);
+INSERT INTO Monster_Hunter_Monster_Parts (name, quantity) VALUES ("Earth Crystal", 10);
+INSERT INTO Monster_Hunter_Monster_Parts (name, quantity) VALUES ("Monster Bone M", 7);
+INSERT INTO Monster_Hunter_Monster_Parts (name, quantity) VALUES ("Carpenterbug", 10);
+INSERT INTO Monster_Hunter_Monster_Parts (name, quantity) VALUES ("Dragonite Ore", 42);
+INSERT INTO Monster_Hunter_Monster_Parts (name, quantity) VALUES ("Godbug", 116);
+INSERT INTO Monster_Hunter_Monster_Parts (name, quantity) VALUES ("Thunderbug", 103); SELECT* FROM Monster_Hunter_Monster_Parts;
+
+UPDATE Monster_Hunter_Monster_Parts SET name = "Toadstool"
+WHERE id= 4;
+SELECT* FROM Monster_Hunter_Monster_Parts;
+
+DELETE FROM Monster_Hunter_Monster_Parts
+WHERE id= 1;
+SELECT* FROM Monster_Hunter_Monster_Parts;
