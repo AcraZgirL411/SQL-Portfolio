@@ -45,4 +45,17 @@ WHERE released >1990 OR mood is "epic"; <br/>
 SELECT title <br/>
 FROM songs <br/>
 WHERE released >1990 AND mood is "epic" AND duration < 240;
+
+# UPDATE
+SELECT * FROM documents;
+
+UPDATE documents 
+SET author = "Jackie Draper" 
+WHERE author = "Jackie Paper";
+SELECT * FROM documents;
+
+# DELETE
+DELETE FROM documents
+WHERE title = "Things I'm Afraid Of";
+SELECT * FROM documents;
  
