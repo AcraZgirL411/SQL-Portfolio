@@ -21,7 +21,6 @@ WHERE id= 2;
 
 UPDATE clothes SET price = 30
 WHERE id= 3;
-
 SELECT * FROM clothes;
 
 INSERT INTO clothes (type, design, price) VALUES ("shirt", "polo", 15);
