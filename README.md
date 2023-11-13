@@ -47,23 +47,21 @@ FROM songs <br/>
 WHERE released >1990 AND mood is "epic" AND duration < 240;
 
 # UPDATE
-SELECT * FROM documents;
-
-UPDATE documents 
-SET author = "Jackie Draper" 
-WHERE author = "Jackie Paper";
+UPDATE documents <br/>
+SET author = "Jackie Draper" <br/>
+WHERE author = "Jackie Paper"; <br/>
 SELECT * FROM documents;
 
 # DELETE
-DELETE FROM documents
-WHERE title = "Things I'm Afraid Of";
+DELETE FROM documents <br/>
+WHERE title = "Things I'm Afraid Of"; <br/>
 SELECT * FROM documents;
 
 # ALTER TABLE
-ALTER TABLE clothes ADD price INTEGER;
+ALTER TABLE clothes ADD price INTEGER; <br/>
 SELECT * FROM clothes;
 
 # DROP TABLE (rarely used)
-DROP TABLE diary_logs;
+DROP TABLE diary_logs; <br/>
 SELECT * FROM diary_logs;
  
