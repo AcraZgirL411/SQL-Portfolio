@@ -58,4 +58,12 @@ SELECT * FROM documents;
 DELETE FROM documents
 WHERE title = "Things I'm Afraid Of";
 SELECT * FROM documents;
+
+# ALTER TABLE
+ALTER TABLE clothes ADD price INTEGER;
+SELECT * FROM clothes;
+
+# DROP TABLE (rarely used)
+DROP TABLE diary_logs;
+SELECT * FROM diary_logs;
  
